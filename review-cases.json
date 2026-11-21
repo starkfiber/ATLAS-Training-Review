@@ -1,0 +1,33 @@
+{
+  "schema": "atlas.training-revision.v1",
+  "fictional": true,
+  "cases": [
+    {
+      "id": "seal", "title": "Pump seal terminology", "record": "Training drawing TP-204", "before": "Rev 2 · The callout reads “shaft seal”.", "after": "Rev 3 · The callout identifies the assembly as “mechanical seal”.",
+      "study": "fuelpump", "second": 22, "part": "Mechanical seal spring and retainer",
+      "items": [
+        {"id":"S-01","type":"3D model","title":"Pump callout","status":"outdated","evidence":"The animated caption uses “shaft seal”.","action":"Check the revised drawing and update the callout."},
+        {"id":"S-02","type":"Lesson","title":"Shaft and seal chapter","status":"aligned","evidence":"The teaching passage already uses “mechanical seal”.","action":"Record that the passage already matches."},
+        {"id":"S-03","type":"Assessment","title":"Identification question","status":"missing","evidence":"The question is referenced, but its answer key was not supplied.","action":"Ask the instructor for the current answer key."}
+      ]
+    },
+    {
+      "id": "tray", "title": "Refinery tray illustration", "record": "Training illustration RC-102", "before": "Rev 4 · Vapour paths are shown without labels.", "after": "Rev 5 · The riser and cap slots are labelled separately.",
+      "study": "fractionation", "second": 10, "part": "Sectioned bubble cap and slots",
+      "items": [
+        {"id":"T-01","type":"3D model","title":"Tray cutaway","status":"aligned","evidence":"The scene has separate riser and cap-slot parts.","action":"Confirm the model selection matches the new illustration."},
+        {"id":"T-02","type":"Lesson","title":"Vapour path diagram","status":"outdated","evidence":"The lesson still uses the unlabelled revision 4 image.","action":"Replace the diagram and review the companion caption."},
+        {"id":"T-03","type":"Assessment","title":"Vapour path question","status":"outdated","evidence":"The answer refers to one unlabeled opening.","action":"Review wording with the instructor and distinguish the two features."}
+      ]
+    },
+    {
+      "id": "batch", "title": "Fuel batch identity", "record": "Training worksheet FA-310", "before": "Rev 1 · Identify a movement record by date.", "after": "Rev 2 · Match the batch identifier across the movement record and lab sheet.",
+      "study": "aviation", "second": 12, "part": "",
+      "items": [
+        {"id":"B-01","type":"3D model","title":"Transfer skid illustration","status":"aligned","evidence":"The view illustrates equipment and makes no batch identity claim.","action":"Retain the illustration as equipment context."},
+        {"id":"B-02","type":"Lesson","title":"Batch trace worksheet","status":"outdated","evidence":"The activity prompts learners to compare dates only.","action":"Add the two fictional batch identifiers to the learner task."},
+        {"id":"B-03","type":"Assessment","title":"Lab and movement exhibits","status":"missing","evidence":"Only the movement record is attached to the question.","action":"Request the lab sheet and hold the assessment update."}
+      ]
+    }
+  ]
+}
